@@ -1,0 +1,10 @@
+use sys;
+create table TRAINER_INFO(Trainer_Id VARCHAR(20),Salutation VARCHAR(7),Trainer_Name VARCHAR(30),Trainer_Location VARCHAR(30),Trainer_Track VARCHAR(15),Trainer_Qualification VARCHAR(100),Trainer_Experiance NUMERIC(11),Trainer_Email VARCHAR(100),Trainer_Password VARCHAR(20));
+create table BATCH_INFO(Batch_Id VARCHAR(20),Batch_Owner VARCHAR(30),Batch_BU_Name VARCHAR(30));
+create table MODULE_INFO(Module_Id VARCHAR(20),Module_Name VARCHAR(40),Module_Duration NUMERIC(11));
+create table ASSOCIATE_INFO(Associate_Id VARCHAR(20),Salutation VARCHAR(7),Associate_Name VARCHAR(30),Associate_Location VARCHAR(30),Associate_Track VARCHAR(15),Associate_Qualification VARCHAR(200),Associate_Email VARCHAR(100),Associate_Password VARCHAR(20));
+create table QUESTIONS(Question_Id VARCHAR(20),Module_Id VARCHAR(20),Question_Text VARCHAR(900));
+create table ASSOCIATE_STATUS(Associate_Id VARCHAR(20),Module_Id VARCHAR(20),Start_Date VARCHAR(20),End_Date VARCHAR(20),AFeedbackGiven VARCHAR(20),TFeedbackGiven VARCHAR(20));
+create table TRAINER_FEEDBACK(Trainer_Id VARCHAR(20),Question_Id VARCHAR(20),Batch_Id VARCHAR(20),Module_Id VARCHAR(20),Trainer_Rating INTEGER(11));
+create table ASSOCIATE_FEEDBACK(Associate_Id VARCHAR(20),Question_Id VARCHAR(20),Module_Id VARCHAR(20),Associate_Rating NUMERIC(11));
+create table LOGINDETAILS(User_Id VARCHAR(20),User_Password VARCHAR(20));S
